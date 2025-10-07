@@ -1,0 +1,10 @@
+alter table camp_mid_sociais drop column metrica;
+alter table camp_mid_sociais rename to capanha_MS;
+alter table clientes drop column contato_princ;
+alter table conteudo_ms drop column link;
+alter table contratos_acordos_serv add column data_hora datetime;
+alter table contratos_acordos_serv rename to contratos_serv;
+alter table equipe_marketing drop column dados_bancarios;
+alter table fornecedores add column custos varchar (45);
+alter table metricas_desemp drop column cliques;
+alter table programacao_postagens rename to postagens;
