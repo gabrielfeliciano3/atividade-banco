@@ -1,4 +1,4 @@
--- drop database agencia_midia_soc;
+--drop database agencia_midia_soc;
 create database agencia_midia_soc;
 use agencia_midia_soc;
 
@@ -14,11 +14,11 @@ metrica VARCHAR (45)
 
 CREATE TABLE Clientes (
     id_cliente int auto_increment PRIMARY KEY,
-    nome VARCHAR (45),
-    empresa VARCHAR (45),
-    contato_princ VARCHAR (45),
-    pagamento VARCHAR (45),
-    historico VARCHAR (45)
+    nome VARCHAR (100),
+    empresa VARCHAR (100),
+    contato_princ VARCHAR (100),
+    pagamento VARCHAR (100),
+    historico VARCHAR (100)
     -- fk_Equipe_marketing_id_funcionario VARCHAR
 );
 
@@ -54,7 +54,7 @@ CREATE TABLE Fornecedores (
     id_fornecedor INT auto_increment PRIMARY KEY,
     nome VARCHAR (45),
     contato VARCHAR (45),
-    historico VARCHAR (45)
+    historico VARCHAR (100)
     -- fk_plano_de_camp_id_camp VARCHAR
 );
 
@@ -68,11 +68,11 @@ CREATE TABLE Contratos_acordos_serv (
 
 CREATE TABLE conteudo_MS (
     id_cont INT auto_increment PRIMARY KEY,
-    texto VARCHAR (45),
-    imagem VARCHAR (45),
-    video VARCHAR (45),
-    hashtags VARCHAR (45),
-    link VARCHAR (45)
+    texto VARCHAR (100),
+    imagem VARCHAR (100),
+    video VARCHAR (100),
+    hashtags VARCHAR (100),
+    link VARCHAR (100)
     -- fk_plano_de_camp_id_camp VARCHAR
 );
 
